@@ -1,0 +1,21 @@
+.about {
+  background-color: aquamarine;
+}
+
+.aboutText {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.mePic {
+  border: black solid 8px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.titleText {
+  display: flex;
+  justify-content: center;
+}
+body {
+  background-color: grey;
+}
