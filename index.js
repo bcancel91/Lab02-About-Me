@@ -140,3 +140,58 @@ if (fifthQ === "y") {
 }
 
 alert("Score: " + score);
+
+for (var i = 0; i < 4; i++) {
+  var sixthQ = prompt(
+    "Ok now " +
+      person +
+      ", using numbers try an guess how many different questions you have been asked? (hint: single digit number)"
+  );
+  console.log(sixthQ);
+  var num1 = parseInt(sixthQ);
+  if (num1 === 0) {
+    alert("Are you serious...  try again and guess higher!");
+  }
+  if (num1 === 1) {
+    alert("Are you even trying anymore? lets bump up that digit!");
+  }
+  if (num1 === 2) {
+    alert(
+      "One for you, uno para mi. It's an even number but not this one. Aim higher!"
+    );
+  }
+  if (num1 === 3) {
+    alert(
+      "Don't give up! You were/'t close but you could be if you guessed higher!"
+    );
+  }
+  if (num1 === 4) {
+    alert(
+      "Are you even trying anymore? Think of a number that is not 4. Guess higher!"
+    );
+  }
+  if (num1 === 5) {
+    alert("so so closeeee, but not quite. Mas jefe Mas... ");
+  }
+  if (num1 === 6) {
+    alert(person + ", seems like this is your lucky day.");
+    score = score + 1;
+    break;
+  }
+  if (num1 === 7) {
+    alert(
+      person +
+        ", doesn't seem like you will be hitting the lottery anytime soon. Maybe if you guess lower..."
+    );
+  }
+  if (num1 === 8) {
+    alert(
+      "Maybe if you subtracted that number ? Thnik of a number smaller in value!"
+    );
+  }
+  if (num1 === 9) {
+    alert("Mucho high, guess lower Senior " + person + ".");
+  }
+}
+
+alert("Score: " + score);
