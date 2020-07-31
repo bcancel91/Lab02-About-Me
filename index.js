@@ -195,3 +195,21 @@ for (var i = 0; i < 4; i++) {
 }
 
 alert("Score: " + score);
+
+// var places = [
+//   "virgina",
+//   "new york",
+//   "california",
+//   "georgia",
+//   "florida",
+//   "washington",
+//   "colorado"
+// ];
+
+// for (var i = 0; i < places.length; i++) {
+//   var seventhQ = prompt(
+//     "I would be ok with relocating to which states? You have 7 guesses to rack up them points. Lets see if you can guess all 7 "
+//   );
+//   console.log(seventhQ);
+//   seventhQ = seventhQ.toLowerCase();
+// }
