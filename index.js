@@ -196,20 +196,30 @@ for (var i = 0; i < 4; i++) {
 
 alert("Score: " + score);
 
-// var places = [
-//   "virgina",
-//   "new york",
-//   "california",
-//   "georgia",
-//   "florida",
-//   "washington",
-//   "colorado"
-// ];
+var places = [
+  "new york",
+  "california",
+  "georgia",
+  "florida",
+  "washington",
+  "colorado"
+];
 
-// for (var i = 0; i < places.length; i++) {
-//   var seventhQ = prompt(
-//     "I would be ok with relocating to which states? You have 7 guesses to rack up them points. Lets see if you can guess all 7 "
-//   );
-//   console.log(seventhQ);
-//   seventhQ = seventhQ.toLowerCase();
-// }
+for (var j = 0; j < 6; j++) {
+  var seventhQ = prompt(
+    "I would be ok with relocating to which states? You have 6 guesses to rack up them points. Lets see if you can guess all 6?"
+  );
+  seventhQ = seventhQ.toLowerCase();
+
+  if (places.indexOf(seventhQ) !== -1) {
+    console.log(seventhQ);
+    alert("Thats right, I would not even think twice!");
+    score + 1;
+  } else {
+    console.log(seventhQ);
+    alert("I would consdier it, but not a preferred place!");
+  }
+}
+alert(
+  `I would totally be ok with ${places}! Thanks for playing, you scored: ${score}!`
+);
